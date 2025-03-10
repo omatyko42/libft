@@ -6,7 +6,7 @@
 /*   By: omatyko <omatyko@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/06 01:14:04 by omatyko           #+#    #+#             */
-/*   Updated: 2025/03/07 18:36:09 by omatyko          ###   ########.fr       */
+/*   Updated: 2025/03/10 12:20:22 by omatyko          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,4 +33,5 @@ char	*ft_strjoin_gnl(char *s1, char *s2);
 int		ft_strichr_gnl(const char *s, int c);
 char	*cut_line(char **storage, int newline_index);
 void	free_get_next_line(int fd);
+void	free_line_close_fd(int fd, char *str);
 #endif

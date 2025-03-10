@@ -6,7 +6,7 @@
 /*   By: omatyko <omatyko@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/03/07 18:35:32 by omatyko           #+#    #+#             */
-/*   Updated: 2025/03/07 18:35:54 by omatyko          ###   ########.fr       */
+/*   Updated: 2025/03/10 12:20:12 by omatyko          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,4 +25,10 @@ void	free_get_next_line(int fd)
 		free(temp);
 		temp = get_next_line(fd);
 	}
+}
+
+void	free_line_close_fd(int fd, char *str)
+{
+	free(str);
+	close(fd);
 }

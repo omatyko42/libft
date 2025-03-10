@@ -6,7 +6,7 @@
 /*   By: omatyko <omatyko@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/29 15:24:45 by omatyko           #+#    #+#             */
-/*   Updated: 2025/03/07 18:41:41 by omatyko          ###   ########.fr       */
+/*   Updated: 2025/03/10 12:19:14 by omatyko          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -95,6 +95,7 @@ int						ft_is_spaces(const char *arg);
 
 char					*get_next_line(int fd);
 void					free_get_next_line(int fd);
+void					free_line_close_fd(int fd, char *str);
 
 int						ft_atoi_base(const char *str, const char *base);
 int						ft_min(int a, int b);
