@@ -6,13 +6,13 @@
 /*   By: omatyko <omatyko@student.hive.fi>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/06 01:13:05 by omatyko           #+#    #+#             */
-/*   Updated: 2025/03/04 15:42:23 by omatyko          ###   ########.fr       */
+/*   Updated: 2025/03/11 13:48:07 by omatyko          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-char	*ft_calloc(size_t count, size_t size)
+static char	*ft_calloc(size_t count, size_t size)
 {
 	char	*ptr;
 	size_t	n;
